@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Baloo+2:wght@400;500&display=swap");
+/* -------------- import google fonts ------------- */
+
+html,
+body {
+  font-family: "Abel", sans-serif;
+}
+
+/* patterns root */
+:root {
+  --caramelo-color: #c78b75;
+  --border: 5px solid #444;
+}
+
+/*---------- Barra de navegação/ menu/ header --------- */
+
+header {
+  width: 100vw;
+  height: 35vh;
+  background: #9e5555;
+  border-bottom: var(--border);
+}
+
+header div.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header ul {
+  display: flex;
+  gap: 10%;
+}
+
+header ul li {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+header ul li a:hover {
+  text-shadow: 3px 1px 1px var(--caramelo-color);
+  border-bottom: 1px solid var(--caramelo-color);
+  font-weight: bold;
+  padding-bottom: 5px;
+  transition: 0.2s;
+}
+
+/* main  */
+main {
+  width: 100vw;
+  background-color: #8c6658;
+}
+
+/* primeira section banner  */
+section#banner {
+  width: 100vw;
+  height: 50vh;
+  background: url(/Projeto/assets/banner.jpg);
+  border-bottom: var(--border);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#banner h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+  background: #444;
+  padding: 10px 1em;
+  border-radius: 25px 0 25px 0;
+  border-bottom: 2px solid var(--caramelo-color);
+  border-bottom: var(--border);
+}
+
+/* segunda section / campo sobre */
+section#section-campoSobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div.campo-sobre {
+  width: 70%;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: var(--border);
+}
+
+section#section-campoSobre div {
+  padding: 25px;
+}
+
+section#section-beneficio {
+  width: 100vw;
+  height: 70vh;
+  background: url(/Projeto/assets/beneficios.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: var(--border);
+}
+
+section#section-beneficio ul {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+/* footer / rodapé */
+
+footer {
+  background: url("/Projeto/assets/bg.jpg");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+#redes-sociais ul {
+  display: flex;
+}
+
+#redes-sociais ul li a {
+  margin-right: 2rem;
+  color: #c4c4c4;
+}
+
+#redes-sociais ul li a:hover {
+  color: #f7b600;
+  transition: 1.1s;
+}
